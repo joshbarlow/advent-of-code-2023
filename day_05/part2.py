@@ -16,8 +16,19 @@ def calculateSeeds(inputDataArray):
 
     seeds = []
 
-    for x in seedSplit:
-        seeds.append(int(x))
+    print(len(seedSplit))
+
+    for x in range(len(seedSplit)):
+        if x % 2 == 0:
+            print(x)
+            seedNum = int(seedSplit[x])
+            seedRange = seedSplit[x+1]
+            for num in range(int(seedRange)):
+                seeds.append(seedNum + num)
+        else:
+            print('odd')
+    
+    print(f"number of seeds: {len(seeds)}")
 
     inputDataArray = inputDataArray[3:]
     mapList = []
