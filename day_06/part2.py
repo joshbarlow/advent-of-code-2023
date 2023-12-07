@@ -36,7 +36,7 @@ def calculateBoatRace(inputDataArray):
         travelTime = time - (y+1)
 
         if(holdTime * travelTime) > distance:
-            print(f"race - hold: {holdTime}, travel: {travelTime}. result: {holdTime * travelTime} - higher than: {distance}")
+            # print(f"race - hold: {holdTime}, travel: {travelTime}. result: {holdTime * travelTime} - higher than: {distance}")
             wins += 1
         
     print(f"{wins} wins")
